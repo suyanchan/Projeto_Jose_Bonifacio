@@ -12,65 +12,98 @@ using System.Threading;
 
 namespace Proj_JB
 {
+    
     public partial class Frm_Home : Form
     {
+        #region Variáveis Globais
 
-        Thread md_frm;
+
+        #endregion
 
         public Frm_Home()
         {
             InitializeComponent();
+
         }
 
         private void Frm_Home_Load(object sender, EventArgs e)
         {
-
+            Variaveis.Verif = false;
+            
         }
 
+        #region Botão Fácil
         private void Btn_F_Click(object sender, EventArgs e)
         {
             Esc_Frm();
 
         }
+        #endregion
 
+        #region Botão Médio
+        private void Btn_M_Click(object sender, EventArgs e)
+        {
+            Esc_Frm();
+        }
+        #endregion
+
+        #region Botão Difícil
+        private void Btn_D_Click(object sender, EventArgs e)
+        {
+            Esc_Frm();
+        }
+
+        #endregion
+
+        #region Função Escolher História
         void Esc_Frm()
         {
             
             if (Rbt_JB.Checked == true)
             {
-                md_frm = new Thread(Nv_frm1);
-                md_frm.SetApartmentState(ApartmentState.STA);
-                md_frm.Start();
-            }
+                Frm_Game1 f = new Frm_Game1();
+                f.Show();
+             }
             else if (Rbt_I.Checked == true)
             {
-                md_frm = new Thread(Nv_frm2);
-                md_frm.SetApartmentState(ApartmentState.STA);
-                md_frm.Start();
+                Frm_Game2 f = new Frm_Game2();
+                f.Show();               
+
             }
         }
-
-        private void Nv_frm2()
-        {
-            Application.Run(new Frm_Game2());
-        }
-
-        private void Nv_frm1()
-        {
-            Application.Run(new Frm_Game1());
-        }
+        #endregion
 
         #region Botão Sair
         private void Frm_Home_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Deseja Sair?", "Encerrando o Jogo...",
-                              MessageBoxButtons.YesNo,
-                              MessageBoxIcon.Question,
-                              MessageBoxDefaultButton.Button2) == DialogResult.No)
-                e.Cancel = true;
-                
+            if (Variaveis.Verif == true)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                if (MessageBox.Show("Deseja Sair?", "Encerrando o Jogo...",
+                                  MessageBoxButtons.YesNo,
+                                  MessageBoxIcon.Question,
+                                  MessageBoxDefaultButton.Button2) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+
+                else
+                {
+                    Frm_Cred f = new Frm_Cred();
+                    f.Show();
+                    
+                    
+                }
+            }
             
         }
+
+
         #endregion
+
+
     }
 }

@@ -13,14 +13,19 @@ namespace Proj_JB
 {
     public partial class Frm_Game1 : Form
     {
+        #region Variaveis Globais
+
+
+        #endregion
+
         public Frm_Game1()
         {
             InitializeComponent();
         }
 
-        private void Frm_Game_Load(object sender, EventArgs e)
+        private void Frm_Game1_Load(object sender, EventArgs e)
         {
-
+            Variaveis.Verif2 = false;
         }
 
         #region Botão Mudar Dificuldade
@@ -48,24 +53,51 @@ namespace Proj_JB
         }
         #endregion
 
-        #region Botão Sair
-        private void Frm_Game1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Deseja Sair?", "Encerrando o Jogo...",
-                              MessageBoxButtons.YesNo,
-                              MessageBoxIcon.Question,
-                              MessageBoxDefaultButton.Button2) == DialogResult.No)
-                e.Cancel = true;
-                
-        }
-
-        #endregion
-
         #region Botão Novo Jogo
         private void Btn_Nv_Jg_Click(object sender, EventArgs e)
         {
-           
+
+            Frm_Home.ActiveForm.Activate();
+            Variaveis.Verif2 = true;
+            this.Close();  
+            
         }
+        #endregion
+
+        #region Botão Sair
+        private void Frm_Game1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Variaveis.Verif2 == true)
+            {
+                e.Cancel = false;
+            }
+
+            else
+            {
+                if (MessageBox.Show("Deseja Sair?", "Encerrando o Jogo...",
+                              MessageBoxButtons.YesNo,
+                              MessageBoxIcon.Question,
+                              MessageBoxDefaultButton.Button2) == DialogResult.No)
+                {
+                    e.Cancel = true;
+
+                }
+                else
+                {
+                    Frm_Cred f = new Frm_Cred();
+                    f.Show();
+                    
+                }
+            }
+
+
+
+
+
+
+
+        }
+
         #endregion
     }
 }

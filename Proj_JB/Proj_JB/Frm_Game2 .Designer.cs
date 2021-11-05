@@ -60,6 +60,7 @@ namespace Proj_JB
             // 
             this.Lbl_Cont.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Cont.Font = new System.Drawing.Font("Ubuntu Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Cont.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Cont.Location = new System.Drawing.Point(340, 86);
             this.Lbl_Cont.Name = "Lbl_Cont";
             this.Lbl_Cont.Size = new System.Drawing.Size(114, 51);
@@ -70,6 +71,7 @@ namespace Proj_JB
             // 
             this.Lbl_Tmr.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Tmr.Font = new System.Drawing.Font("Ubuntu Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Tmr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Tmr.Location = new System.Drawing.Point(748, 86);
             this.Lbl_Tmr.Name = "Lbl_Tmr";
             this.Lbl_Tmr.Size = new System.Drawing.Size(96, 51);
@@ -115,6 +117,7 @@ namespace Proj_JB
             this.Btn_Vol.TabIndex = 37;
             this.Btn_Vol.UseVisualStyleBackColor = false;
             this.Btn_Vol.Visible = false;
+            this.Btn_Vol.Click += new System.EventHandler(this.Btn_Vol_Click);
             // 
             // Btn_Md_D
             // 
@@ -174,6 +177,7 @@ namespace Proj_JB
             this.Btn_Md_Dif.Size = new System.Drawing.Size(205, 83);
             this.Btn_Md_Dif.TabIndex = 33;
             this.Btn_Md_Dif.UseVisualStyleBackColor = false;
+            this.Btn_Md_Dif.Click += new System.EventHandler(this.Btn_Md_Dif_Click);
             // 
             // Btn_Nv_Jg
             // 
@@ -188,6 +192,7 @@ namespace Proj_JB
             this.Btn_Nv_Jg.Size = new System.Drawing.Size(205, 83);
             this.Btn_Nv_Jg.TabIndex = 32;
             this.Btn_Nv_Jg.UseVisualStyleBackColor = false;
+            this.Btn_Nv_Jg.Click += new System.EventHandler(this.Btn_Nv_Jg_Click);
             // 
             // Btn_Tip
             // 
@@ -197,6 +202,7 @@ namespace Proj_JB
             this.Btn_Tip.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Btn_Tip.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Btn_Tip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Tip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Btn_Tip.Location = new System.Drawing.Point(899, 190);
             this.Btn_Tip.Name = "Btn_Tip";
             this.Btn_Tip.Size = new System.Drawing.Size(435, 131);

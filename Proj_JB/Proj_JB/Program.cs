@@ -16,7 +16,9 @@ namespace Proj_JB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Frm_Splash());
             Application.Run(new Frm_Home());
+            Application.Run(new Frm_Cred());
         }
     }
 }

@@ -20,17 +20,68 @@ namespace Proj_JB
 
         private void Frm_Game2_Load(object sender, EventArgs e)
         {
-
+            Variaveis.Verif2 = false;
         }
 
         #region Botão Sair
         private void Frm_Game2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Deseja Sair?", "Encerrando o Jogo...",
+            if (Variaveis.Verif2 == true)
+            {
+                e.Cancel = false;
+            }
+
+            else
+            {
+                if (MessageBox.Show("Deseja Sair?", "Encerrando o Jogo...",
                               MessageBoxButtons.YesNo,
                               MessageBoxIcon.Question,
                               MessageBoxDefaultButton.Button2) == DialogResult.No)
-                e.Cancel = true;
+                {
+                    e.Cancel = true;
+
+                }
+                else
+                {
+                    Frm_Cred f = new Frm_Cred();
+                    f.Show();
+
+                }
+            }
+
+        }
+        #endregion
+
+        #region Botão Mudar Dificuldade
+        private void Btn_Md_Dif_Click(object sender, EventArgs e)
+        {
+            Btn_Tip.Visible = false;
+            Btn_Conf.Visible = true;
+            Btn_Vol.Visible = true;
+            Btn_Md_F.Visible = true;
+            Btn_Md_M.Visible = true;
+            Btn_Md_D.Visible = true;
+        }
+        #endregion
+
+        #region Botão Voltar
+        private void Btn_Vol_Click(object sender, EventArgs e)
+        {
+            Btn_Tip.Visible = true;
+            Btn_Conf.Visible = false;
+            Btn_Vol.Visible = false;
+            Btn_Md_F.Visible = false;
+            Btn_Md_M.Visible = false;
+            Btn_Md_D.Visible = false;
+        }
+        #endregion
+
+        #region Botão Novo Jogo
+        private void Btn_Nv_Jg_Click(object sender, EventArgs e)
+        {
+            Frm_Home.ActiveForm.Activate();
+            Variaveis.Verif2 = true;
+            this.Close();
         }
         #endregion
     }

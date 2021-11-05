@@ -55,6 +55,7 @@ namespace Proj_JB
             // 
             this.Lbl_Nm_Jog.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Nm_Jog.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Nm_Jog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Nm_Jog.Location = new System.Drawing.Point(79, 122);
             this.Lbl_Nm_Jog.Name = "Lbl_Nm_Jog";
             this.Lbl_Nm_Jog.Size = new System.Drawing.Size(302, 41);
@@ -75,6 +76,7 @@ namespace Proj_JB
             // 
             this.Lbl_Dif.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Dif.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Dif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Dif.Location = new System.Drawing.Point(131, 276);
             this.Lbl_Dif.Name = "Lbl_Dif";
             this.Lbl_Dif.Size = new System.Drawing.Size(200, 46);
@@ -114,6 +116,7 @@ namespace Proj_JB
             this.Btn_M.Size = new System.Drawing.Size(189, 47);
             this.Btn_M.TabIndex = 4;
             this.Btn_M.UseVisualStyleBackColor = false;
+            this.Btn_M.Click += new System.EventHandler(this.Btn_M_Click);
             // 
             // Btn_D
             // 
@@ -130,6 +133,7 @@ namespace Proj_JB
             this.Btn_D.Size = new System.Drawing.Size(189, 47);
             this.Btn_D.TabIndex = 5;
             this.Btn_D.UseVisualStyleBackColor = false;
+            this.Btn_D.Click += new System.EventHandler(this.Btn_D_Click);
             // 
             // Pbx_Logo1
             // 
@@ -176,6 +180,7 @@ namespace Proj_JB
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Signika Negative", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.label1.Location = new System.Drawing.Point(495, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(480, 46);
@@ -186,7 +191,8 @@ namespace Proj_JB
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Ubuntu Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.label2.Location = new System.Drawing.Point(495, 250);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(399, 46);
@@ -197,7 +203,8 @@ namespace Proj_JB
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Ubuntu Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.label3.Location = new System.Drawing.Point(928, 250);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(399, 46);
@@ -208,12 +215,13 @@ namespace Proj_JB
             // Rbt_I
             // 
             this.Rbt_I.BackColor = System.Drawing.Color.Transparent;
-            this.Rbt_I.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.Rbt_I.FlatAppearance.BorderColor = System.Drawing.Color.Sienna;
             this.Rbt_I.FlatAppearance.BorderSize = 2;
             this.Rbt_I.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.Rbt_I.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rbt_I.ForeColor = System.Drawing.Color.Transparent;
             this.Rbt_I.Location = new System.Drawing.Point(1276, 250);
+            this.Rbt_I.MinimumSize = new System.Drawing.Size(21, 21);
             this.Rbt_I.Name = "Rbt_I";
             this.Rbt_I.Size = new System.Drawing.Size(42, 40);
             this.Rbt_I.TabIndex = 13;
@@ -223,16 +231,17 @@ namespace Proj_JB
             // Rbt_JB
             // 
             this.Rbt_JB.BackColor = System.Drawing.Color.Transparent;
-            this.Rbt_JB.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.Rbt_JB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rbt_JB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(6)))), ((int)(((byte)(157)))), ((int)(((byte)(15)))));
             this.Rbt_JB.FlatAppearance.BorderSize = 2;
-            this.Rbt_JB.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.Rbt_JB.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rbt_JB.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.Rbt_JB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(12)))), ((int)(((byte)(78)))), ((int)(((byte)(43)))));
+            this.Rbt_JB.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rbt_JB.ForeColor = System.Drawing.Color.Transparent;
             this.Rbt_JB.Location = new System.Drawing.Point(843, 250);
             this.Rbt_JB.Name = "Rbt_JB";
-            this.Rbt_JB.Size = new System.Drawing.Size(42, 40);
+            this.Rbt_JB.Size = new System.Drawing.Size(43, 40);
             this.Rbt_JB.TabIndex = 14;
-            this.Rbt_JB.TabStop = true;
             this.Rbt_JB.UseVisualStyleBackColor = false;
             // 
             // Frm_Home
@@ -240,7 +249,6 @@ namespace Proj_JB
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proj_JB.Properties.Resources.Bg;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 766);
             this.Controls.Add(this.Rbt_JB);
             this.Controls.Add(this.Rbt_I);
@@ -261,6 +269,7 @@ namespace Proj_JB
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(21, 21);
             this.Name = "Frm_Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Caça Palavras";

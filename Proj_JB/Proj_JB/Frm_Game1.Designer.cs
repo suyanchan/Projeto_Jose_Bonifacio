@@ -131,6 +131,7 @@ namespace Proj_JB
             this.Btn_Tip.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Btn_Tip.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Btn_Tip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Tip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Btn_Tip.Location = new System.Drawing.Point(898, 190);
             this.Btn_Tip.Name = "Btn_Tip";
             this.Btn_Tip.Size = new System.Drawing.Size(435, 131);
@@ -257,6 +258,7 @@ namespace Proj_JB
             // 
             this.Lbl_Tmr.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Tmr.Font = new System.Drawing.Font("Ubuntu Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Tmr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Tmr.Location = new System.Drawing.Point(747, 86);
             this.Lbl_Tmr.Name = "Lbl_Tmr";
             this.Lbl_Tmr.Size = new System.Drawing.Size(96, 51);
@@ -267,6 +269,7 @@ namespace Proj_JB
             // 
             this.Lbl_Cont.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Cont.Font = new System.Drawing.Font("Ubuntu Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Cont.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Cont.Location = new System.Drawing.Point(339, 86);
             this.Lbl_Cont.Name = "Lbl_Cont";
             this.Lbl_Cont.Size = new System.Drawing.Size(114, 51);
@@ -307,7 +310,7 @@ namespace Proj_JB
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Caça Palavras";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Game1_FormClosing);
-            this.Load += new System.EventHandler(this.Frm_Game_Load);
+            this.Load += new System.EventHandler(this.Frm_Game1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo1)).EndInit();

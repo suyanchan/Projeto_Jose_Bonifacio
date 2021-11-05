@@ -10,3 +10,5 @@ C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifá
 C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.pdb
 C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Game1.resources
 C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Game2.resources
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Splash.resources
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Cred.resources
