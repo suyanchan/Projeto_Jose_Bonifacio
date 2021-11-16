@@ -103,7 +103,7 @@ namespace Proj_JB
             {
                 for (int i = 0; i < tableDificult; i++)
                 {
-                    if (buttonsInfo[c][i].selected == true && buttonsInfo[c][i].isResponse == false)
+                    if (buttonsInfo[c][i].selected == true)
                     {
                         buttonsInfo[c][i].selected = false;
                         table[c][i].Image = Proj_JB.Properties.Resources.Bg_Txts;
