@@ -30,7 +30,7 @@ namespace Proj_JB
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Game2));
-            this.Lbl_Cont = new System.Windows.Forms.Label();
+            this.Lbl_Total = new System.Windows.Forms.Label();
             this.Lbl_Tmr = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Btn_Conf = new System.Windows.Forms.Button();
@@ -46,8 +46,9 @@ namespace Proj_JB
             this.Pnl_CP = new System.Windows.Forms.Panel();
             this.Pbx_Logo2 = new System.Windows.Forms.PictureBox();
             this.Pbx_Logo1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Lbl_Texto = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Lbl_Cont = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Rnk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Art4)).BeginInit();
@@ -56,21 +57,21 @@ namespace Proj_JB
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Lbl_Cont
+            // Lbl_Total
             // 
-            this.Lbl_Cont.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_Cont.Font = new System.Drawing.Font("Ubuntu Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Cont.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.Lbl_Cont.Location = new System.Drawing.Point(340, 86);
-            this.Lbl_Cont.Name = "Lbl_Cont";
-            this.Lbl_Cont.Size = new System.Drawing.Size(114, 51);
-            this.Lbl_Cont.TabIndex = 41;
-            this.Lbl_Cont.Text = "00 / 10";
+            this.Lbl_Total.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.Lbl_Total.Location = new System.Drawing.Point(340, 86);
+            this.Lbl_Total.Name = "Lbl_Total";
+            this.Lbl_Total.Size = new System.Drawing.Size(45, 51);
+            this.Lbl_Total.TabIndex = 41;
+            this.Lbl_Total.Text = "00";
             // 
             // Lbl_Tmr
             // 
             this.Lbl_Tmr.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_Tmr.Font = new System.Drawing.Font("Ubuntu Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Tmr.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Tmr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Tmr.Location = new System.Drawing.Point(748, 86);
             this.Lbl_Tmr.Name = "Lbl_Tmr";
@@ -239,6 +240,7 @@ namespace Proj_JB
             // 
             // Pbx_Logo2
             // 
+            this.Pbx_Logo2.BackColor = System.Drawing.Color.Transparent;
             this.Pbx_Logo2.Location = new System.Drawing.Point(171, 637);
             this.Pbx_Logo2.Name = "Pbx_Logo2";
             this.Pbx_Logo2.Size = new System.Drawing.Size(103, 105);
@@ -258,13 +260,14 @@ namespace Proj_JB
             this.Pbx_Logo1.TabIndex = 26;
             this.Pbx_Logo1.TabStop = false;
             // 
-            // label1
+            // Lbl_Texto
             // 
-            this.label1.Font = new System.Drawing.Font("Shanti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 494);
-            this.label1.TabIndex = 25;
+            this.Lbl_Texto.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Texto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Texto.Location = new System.Drawing.Point(53, 86);
+            this.Lbl_Texto.Name = "Lbl_Texto";
+            this.Lbl_Texto.Size = new System.Drawing.Size(210, 494);
+            this.Lbl_Texto.TabIndex = 25;
             // 
             // pictureBox1
             // 
@@ -276,6 +279,17 @@ namespace Proj_JB
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
+            // Lbl_Cont
+            // 
+            this.Lbl_Cont.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Cont.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Cont.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.Lbl_Cont.Location = new System.Drawing.Point(378, 87);
+            this.Lbl_Cont.Name = "Lbl_Cont";
+            this.Lbl_Cont.Size = new System.Drawing.Size(114, 51);
+            this.Lbl_Cont.TabIndex = 42;
+            this.Lbl_Cont.Text = "/ 10";
+            // 
             // Frm_Game2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,6 +299,7 @@ namespace Proj_JB
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1364, 766);
             this.Controls.Add(this.Lbl_Cont);
+            this.Controls.Add(this.Lbl_Total);
             this.Controls.Add(this.Lbl_Tmr);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Btn_Conf);
@@ -300,7 +315,7 @@ namespace Proj_JB
             this.Controls.Add(this.Pnl_CP);
             this.Controls.Add(this.Pbx_Logo2);
             this.Controls.Add(this.Pbx_Logo1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Lbl_Texto);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -323,7 +338,7 @@ namespace Proj_JB
 
         #endregion
 
-        private System.Windows.Forms.Label Lbl_Cont;
+        private System.Windows.Forms.Label Lbl_Total;
         private System.Windows.Forms.Label Lbl_Tmr;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button Btn_Conf;
@@ -339,8 +354,9 @@ namespace Proj_JB
         private System.Windows.Forms.Panel Pnl_CP;
         private System.Windows.Forms.PictureBox Pbx_Logo2;
         private System.Windows.Forms.PictureBox Pbx_Logo1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Lbl_Texto;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Lbl_Cont;
     }
 }
 

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Threading;
+using Newtonsoft.Json;
+
 
 namespace Proj_JB
 {
@@ -16,14 +18,16 @@ namespace Proj_JB
     public partial class Frm_Home : Form
     {
         #region Variáveis Globais
-
-
+        string gameDificult = "";
+        public string jsonObject = Directory.GetCurrentDirectory();
+        public IList<string> GlobalFases;
+        int dificult;
+        Thread md_frm;
         #endregion
 
         public Frm_Home()
         {
             InitializeComponent();
-
         }
 
         private void Frm_Home_Load(object sender, EventArgs e)
@@ -32,44 +36,115 @@ namespace Proj_JB
             
         }
 
-        #region Botão Fácil
+        #region Classes e Leituras de Arquivo
+        class Fases
+        {
+            public Bonifacio bonifacio { get; set; }
+            public Independencia independencia { get; set; }
+        }
+
+        public class Bonifacio {
+            public IList<string> facil { get; set; }
+            public IList<string> medio { get; set; }
+            public IList<string> dificil { get; set; }
+        }
+
+        public class Independencia
+        {
+            public IList<string> facil { get; set; }
+            public IList<string> medio { get; set; }
+            public IList<string> dificil { get; set; }
+        }
+
+        private void Read_file()
+        {
+            StreamReader r = new StreamReader(Directory.GetCurrentDirectory() + "\\frases.json");
+            string jsonString = r.ReadToEnd();
+            Fases fases = JsonConvert.DeserializeObject<Fases>(jsonString);
+
+            if (gameDificult == "Facil" && Rbt_JB.Checked == true)
+            {
+                GlobalFases = fases.bonifacio.facil;
+                dificult = 15;
+            }
+            if (gameDificult == "Medio" && Rbt_JB.Checked == true)
+            {
+                GlobalFases = fases.bonifacio.medio;
+                dificult = 20;
+            }
+            if (gameDificult == "Dificil" && Rbt_JB.Checked == true)
+            {
+                GlobalFases = fases.bonifacio.dificil;
+                dificult = 25;
+            }
+
+
+            if (gameDificult == "Facil" && Rbt_I.Checked == true)
+            {
+                GlobalFases = fases.independencia.facil;
+                dificult = 10;
+            }
+            if (gameDificult == "Medio" && Rbt_I.Checked == true)
+            {
+                GlobalFases = fases.independencia.medio;
+                dificult = 20;
+            }
+            if (gameDificult == "Dificil" && Rbt_I.Checked == true)
+            {
+                GlobalFases = fases.independencia.dificil;
+                dificult = 30;
+            }
+        }
+        #endregion
+
+
+        #region Buttons
         private void Btn_F_Click(object sender, EventArgs e)
         {
+            gameDificult = "Facil";
             Esc_Frm();
-
         }
-        #endregion
 
-        #region Botão Médio
         private void Btn_M_Click(object sender, EventArgs e)
         {
+            gameDificult = "Medio";
             Esc_Frm();
         }
-        #endregion
 
-        #region Botão Difícil
         private void Btn_D_Click(object sender, EventArgs e)
         {
+            gameDificult = "Dificil";
             Esc_Frm();
         }
-
         #endregion
 
-        #region Função Escolher História
+        #region Navigate
         void Esc_Frm()
         {
-            
+            Read_file();
             if (Rbt_JB.Checked == true)
             {
-                Frm_Game1 f = new Frm_Game1();
-                f.Show();
-             }
+                md_frm = new Thread(Nv_frm1);
+                md_frm.SetApartmentState(ApartmentState.STA);
+                md_frm.Start();
+            }
             else if (Rbt_I.Checked == true)
             {
-                Frm_Game2 f = new Frm_Game2();
-                f.Show();               
+                md_frm = new Thread(Nv_frm2);
+                md_frm.SetApartmentState(ApartmentState.STA);
+                md_frm.Start();
+            }   
+        }
 
-            }
+        private void Nv_frm2()
+        {
+            Application.Run(new Frm_Game2(GlobalFases, dificult));
+        }
+
+
+        private void Nv_frm1()
+        {
+            Application.Run(new Frm_Game1(GlobalFases, dificult));
         }
         #endregion
 

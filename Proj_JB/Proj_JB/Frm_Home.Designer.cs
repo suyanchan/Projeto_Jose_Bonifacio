@@ -54,7 +54,7 @@ namespace Proj_JB
             // Lbl_Nm_Jog
             // 
             this.Lbl_Nm_Jog.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_Nm_Jog.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Nm_Jog.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Nm_Jog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Nm_Jog.Location = new System.Drawing.Point(79, 122);
             this.Lbl_Nm_Jog.Name = "Lbl_Nm_Jog";
@@ -66,7 +66,7 @@ namespace Proj_JB
             // Txt_Nm_Jog
             // 
             this.Txt_Nm_Jog.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Txt_Nm_Jog.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Nm_Jog.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Nm_Jog.Location = new System.Drawing.Point(96, 182);
             this.Txt_Nm_Jog.Name = "Txt_Nm_Jog";
             this.Txt_Nm_Jog.Size = new System.Drawing.Size(267, 37);
@@ -75,7 +75,7 @@ namespace Proj_JB
             // Lbl_Dif
             // 
             this.Lbl_Dif.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_Dif.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Dif.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Dif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Dif.Location = new System.Drawing.Point(131, 276);
             this.Lbl_Dif.Name = "Lbl_Dif";
@@ -179,7 +179,7 @@ namespace Proj_JB
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Signika Negative", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.label1.Location = new System.Drawing.Point(495, 115);
             this.label1.Name = "label1";
@@ -191,7 +191,7 @@ namespace Proj_JB
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Ubuntu Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.label2.Location = new System.Drawing.Point(495, 250);
             this.label2.Name = "label2";
@@ -203,7 +203,7 @@ namespace Proj_JB
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Ubuntu Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.label3.Location = new System.Drawing.Point(928, 250);
             this.label3.Name = "label3";
@@ -269,7 +269,7 @@ namespace Proj_JB
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(21, 21);
+            this.MinimumSize = new System.Drawing.Size(21, 39);
             this.Name = "Frm_Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Caça Palavras";

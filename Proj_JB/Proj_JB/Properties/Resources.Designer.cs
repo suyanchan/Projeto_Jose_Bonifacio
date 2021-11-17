@@ -263,6 +263,16 @@ namespace Proj_JB.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ErrorSelect {
+            get {
+                object obj = ResourceManager.GetObject("ErrorSelect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap JB_Sig {
             get {
                 object obj = ResourceManager.GetObject("JB_Sig", resourceCulture);
@@ -276,6 +286,16 @@ namespace Proj_JB.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OKSelect {
+            get {
+                object obj = ResourceManager.GetObject("OKSelect", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
