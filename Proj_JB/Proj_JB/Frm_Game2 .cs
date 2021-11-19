@@ -112,6 +112,8 @@ namespace Proj_JB
         private void onErrorSelect(int positionX, int positionY)
         {
 
+            selectedWord = "";
+
             for (int c = 0; c < tableDificult; c++)
             {
                 for (int i = 0; i < tableDificult; i++)
@@ -143,7 +145,11 @@ namespace Proj_JB
 
             int selected = 0;
 
-            string wordSelected = selectedWord.Split(':').Where(word => word != "").ToList()[0];
+            List<string> wordSelectedList = selectedWord.Split(':').Where(word => word != "").ToList();
+
+            if (wordSelectedList.Count == 0) return;
+
+            string wordSelected = wordSelectedList[0];
 
             if (isSameWord)
             {
@@ -482,8 +488,7 @@ namespace Proj_JB
             int width = (Pnl_CP.Width / tableDificult) - 2;
             int height = (Pnl_CP.Height / tableDificult) - 1;
 
-            int xMargin = (Pnl_CP.Width - tableDificult * (width + 1));
-            int yMargin = (Pnl_CP.Height - tableDificult * (height + 1));
+            int yMargin = 1;
             Font font = new Font("Arial", height / 3);
 
             for (int c = 0; c < tableDificult; c++)
@@ -516,7 +521,7 @@ namespace Proj_JB
                     button.Font = font;
                     button.Click += new EventHandler(Select_button);
 
-                    button.Location = new Point(xMargin + (button.Width * i), yMargin);
+                    button.Location = new Point(1 + ((width + 2) * i), yMargin);
 
                     row.Add(button);
                     #endregion
