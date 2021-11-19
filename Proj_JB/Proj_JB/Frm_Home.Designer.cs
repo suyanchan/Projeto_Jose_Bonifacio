@@ -43,8 +43,8 @@ namespace Proj_JB
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Rbt_I = new System.Windows.Forms.RadioButton();
-            this.Rbt_JB = new System.Windows.Forms.RadioButton();
+            this.Rbt_I = new CustomControls.RJControls.RJRadioButton();
+            this.Rbt_JB = new CustomControls.RJControls.RJRadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Art1)).BeginInit();
@@ -141,7 +141,7 @@ namespace Proj_JB
             this.Pbx_Logo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Pbx_Logo1.Image = global::Proj_JB.Properties.Resources.logo;
             this.Pbx_Logo1.InitialImage = null;
-            this.Pbx_Logo1.Location = new System.Drawing.Point(99, 627);
+            this.Pbx_Logo1.Location = new System.Drawing.Point(99, 590);
             this.Pbx_Logo1.Name = "Pbx_Logo1";
             this.Pbx_Logo1.Size = new System.Drawing.Size(103, 105);
             this.Pbx_Logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,7 +150,7 @@ namespace Proj_JB
             // 
             // Pbx_Logo2
             // 
-            this.Pbx_Logo2.Location = new System.Drawing.Point(268, 627);
+            this.Pbx_Logo2.Location = new System.Drawing.Point(268, 590);
             this.Pbx_Logo2.Name = "Pbx_Logo2";
             this.Pbx_Logo2.Size = new System.Drawing.Size(103, 105);
             this.Pbx_Logo2.TabIndex = 7;
@@ -214,34 +214,39 @@ namespace Proj_JB
             // 
             // Rbt_I
             // 
+            this.Rbt_I.AutoSize = true;
             this.Rbt_I.BackColor = System.Drawing.Color.Transparent;
-            this.Rbt_I.FlatAppearance.BorderColor = System.Drawing.Color.Sienna;
-            this.Rbt_I.FlatAppearance.BorderSize = 2;
-            this.Rbt_I.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.Rbt_I.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rbt_I.BackgroundImage = global::Proj_JB.Properties.Resources.rbt_2;
+            this.Rbt_I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rbt_I.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(67)))));
+            this.Rbt_I.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Rbt_I.ForeColor = System.Drawing.Color.Transparent;
-            this.Rbt_I.Location = new System.Drawing.Point(1276, 250);
-            this.Rbt_I.MinimumSize = new System.Drawing.Size(21, 21);
+            this.Rbt_I.Location = new System.Drawing.Point(1274, 250);
+            this.Rbt_I.MinimumSize = new System.Drawing.Size(38, 38);
             this.Rbt_I.Name = "Rbt_I";
-            this.Rbt_I.Size = new System.Drawing.Size(42, 40);
-            this.Rbt_I.TabIndex = 13;
+            this.Rbt_I.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Rbt_I.Size = new System.Drawing.Size(38, 38);
+            this.Rbt_I.TabIndex = 16;
             this.Rbt_I.TabStop = true;
+            this.Rbt_I.UnCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(67)))));
             this.Rbt_I.UseVisualStyleBackColor = false;
             // 
             // Rbt_JB
             // 
-            this.Rbt_JB.BackColor = System.Drawing.Color.Transparent;
+            this.Rbt_JB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(190)))), ((int)(((byte)(130)))));
             this.Rbt_JB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Rbt_JB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(6)))), ((int)(((byte)(157)))), ((int)(((byte)(15)))));
-            this.Rbt_JB.FlatAppearance.BorderSize = 2;
-            this.Rbt_JB.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.Rbt_JB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(12)))), ((int)(((byte)(78)))), ((int)(((byte)(43)))));
-            this.Rbt_JB.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rbt_JB.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Rbt_JB.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(67)))));
+            this.Rbt_JB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Rbt_JB.ForeColor = System.Drawing.Color.Transparent;
-            this.Rbt_JB.Location = new System.Drawing.Point(843, 250);
+            this.Rbt_JB.Location = new System.Drawing.Point(842, 250);
+            this.Rbt_JB.MinimumSize = new System.Drawing.Size(38, 38);
             this.Rbt_JB.Name = "Rbt_JB";
-            this.Rbt_JB.Size = new System.Drawing.Size(43, 40);
-            this.Rbt_JB.TabIndex = 14;
+            this.Rbt_JB.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Rbt_JB.Size = new System.Drawing.Size(38, 38);
+            this.Rbt_JB.TabIndex = 15;
+            this.Rbt_JB.TabStop = true;
+            this.Rbt_JB.UnCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(67)))));
             this.Rbt_JB.UseVisualStyleBackColor = false;
             // 
             // Frm_Home
@@ -249,9 +254,9 @@ namespace Proj_JB
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proj_JB.Properties.Resources.Bg;
-            this.ClientSize = new System.Drawing.Size(1366, 766);
-            this.Controls.Add(this.Rbt_JB);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.Rbt_I);
+            this.Controls.Add(this.Rbt_JB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -299,7 +304,7 @@ namespace Proj_JB
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton Rbt_I;
-        private System.Windows.Forms.RadioButton Rbt_JB;
+        private CustomControls.RJControls.RJRadioButton Rbt_JB;
+        private CustomControls.RJControls.RJRadioButton Rbt_I;
     }
 }

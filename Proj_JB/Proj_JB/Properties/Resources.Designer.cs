@@ -333,9 +333,9 @@ namespace Proj_JB.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pbx_Art4 {
+        internal static System.Drawing.Bitmap Pbx_Art41 {
             get {
-                object obj = ResourceManager.GetObject("Pbx_Art4", resourceCulture);
+                object obj = ResourceManager.GetObject("Pbx_Art41", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

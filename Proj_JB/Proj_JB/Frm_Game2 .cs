@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace Proj_JB
 {
@@ -25,6 +26,7 @@ namespace Proj_JB
         int finished_words;
         List<List<Button>> table = new List<List<Button>>();
         List<List<ButtonInformation>> buttonsInfo = new List<List<ButtonInformation>>();
+        private Stopwatch stopwatch;
 
         private class ButtonInformation
         {
@@ -51,12 +53,16 @@ namespace Proj_JB
             fases = importFases;
             tableDificult = dificult;
             generate_new_phrase();
+            Fim_Jogo();
         }
 
+        #region Load
         private void Frm_Game2_Load(object sender, EventArgs e)
         {
-            Variaveis.Verif2 = false;
+            stopwatch = new Stopwatch();
+            stopwatch.Start();
         }
+        #endregion
 
         #region Buttons Logic
 
@@ -184,7 +190,7 @@ namespace Proj_JB
                 if (hasRemovedString)
                 {
                     finished_words++;
-                    Lbl_Total.Text = finished_words.ToString();
+                    Lbl_Cont.Text = finished_words.ToString();
                 }
 
             }
@@ -223,7 +229,8 @@ namespace Proj_JB
 
             Generate_Table();
             Render_Phrases();
-            //Generate_Random();
+            Generate_Random();
+
 
         }
         #endregion
@@ -557,30 +564,7 @@ namespace Proj_JB
                 }
             }
 
-        }
-        #endregion
 
-        #region Botão Mudar Dificuldade
-        private void Btn_Md_Dif_Click(object sender, EventArgs e)
-        {
-            Btn_Tip.Visible = false;
-            Btn_Conf.Visible = true;
-            Btn_Vol.Visible = true;
-            Btn_Md_F.Visible = true;
-            Btn_Md_M.Visible = true;
-            Btn_Md_D.Visible = true;
-        }
-        #endregion
-
-        #region Botão Voltar
-        private void Btn_Vol_Click(object sender, EventArgs e)
-        {
-            Btn_Tip.Visible = true;
-            Btn_Conf.Visible = false;
-            Btn_Vol.Visible = false;
-            Btn_Md_F.Visible = false;
-            Btn_Md_M.Visible = false;
-            Btn_Md_D.Visible = false;
         }
         #endregion
 
@@ -592,5 +576,30 @@ namespace Proj_JB
             this.Close();
         }
         #endregion
+
+        #region Fim do Jogo
+        private void Fim_Jogo()
+        {
+            
+            if (finished_words == palavras.Count)
+            {
+                string[] rk = new string[2];
+                rk[0] = Variaveis.Nome;
+                rk[1] = Lbl_Tmr.Text;
+                stopwatch.Stop();
+
+                ListViewItem l = new ListViewItem(rk);
+                Lv_Ranking.Items.Add(l);
+            }
+        }
+        #endregion
+
+        #region Cronometro
+        private void Tmr_Cont2_Tick(object sender, EventArgs e)
+        {
+            Lbl_Tmr.Text = $"{stopwatch.Elapsed:mm\\:ss}";
+        }
+        #endregion
+
     }
 }

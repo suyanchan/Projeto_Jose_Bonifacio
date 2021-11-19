@@ -34,6 +34,7 @@ namespace Proj_JB
         {
             Variaveis.Verif = false;
             
+            
         }
 
         #region Classes e Leituras de Arquivo
@@ -62,6 +63,7 @@ namespace Proj_JB
             string jsonString = r.ReadToEnd();
             Fases fases = JsonConvert.DeserializeObject<Fases>(jsonString);
 
+
             if (gameDificult == "Facil" && Rbt_JB.Checked == true)
             {
                 GlobalFases = fases.bonifacio.facil;
@@ -82,7 +84,7 @@ namespace Proj_JB
             if (gameDificult == "Facil" && Rbt_I.Checked == true)
             {
                 GlobalFases = fases.independencia.facil;
-                dificult = 10;
+                dificult = 15;
             }
             if (gameDificult == "Medio" && Rbt_I.Checked == true)
             {
@@ -92,11 +94,10 @@ namespace Proj_JB
             if (gameDificult == "Dificil" && Rbt_I.Checked == true)
             {
                 GlobalFases = fases.independencia.dificil;
-                dificult = 30;
+                dificult = 25;
             }
         }
         #endregion
-
 
         #region Buttons
         private void Btn_F_Click(object sender, EventArgs e)
@@ -122,11 +123,14 @@ namespace Proj_JB
         void Esc_Frm()
         {
             Read_file();
+
+            Txt_Nm_Jog.Text = Variaveis.Nome;
             if (Rbt_JB.Checked == true)
             {
                 md_frm = new Thread(Nv_frm1);
                 md_frm.SetApartmentState(ApartmentState.STA);
                 md_frm.Start();
+                
             }
             else if (Rbt_I.Checked == true)
             {
@@ -175,6 +179,7 @@ namespace Proj_JB
             }
             
         }
+
 
 
         #endregion

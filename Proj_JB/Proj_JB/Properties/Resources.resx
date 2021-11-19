@@ -166,9 +166,6 @@
   <data name="Btn_Vol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Imgs\Btn_Vol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pbx_Art4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Imgs\800px-DpedroI-brasil-full 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="rbt_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Imgs\rbt_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -177,9 +174,6 @@
   </data>
   <data name="DP_Sig" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Imgs\DP_Sig.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pbx_Art3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Imgs\foto 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JB_Sig" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Imgs\JB_Sig.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -207,5 +201,11 @@
   </data>
   <data name="ErrorSelect" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Imgs\ErrorSelect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pbx_Art3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Imgs\Pbx_Art3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pbx_Art41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Imgs\Pbx_Art4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

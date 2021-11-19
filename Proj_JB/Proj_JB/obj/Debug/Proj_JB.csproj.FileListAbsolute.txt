@@ -28,3 +28,20 @@ C:\Users\Alexsander\Desktop\Projeto Bon\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\o
 C:\Users\Alexsander\Desktop\Projeto Bon\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.pdb
 C:\Users\Alexsander\Desktop\Projeto Bon\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Alexsander\Desktop\Projeto Bon\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\bin\Debug\Proj_JB.exe.config
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\bin\Debug\Proj_JB.exe
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\bin\Debug\Proj_JB.pdb
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.csproj.AssemblyReference.cache
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Cred.resources
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Game2.resources
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Game1.resources
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Home.resources
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Frm_Splash.resources
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.Properties.Resources.resources
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.csproj.GenerateResource.cache
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.csproj.CoreCompileInputs.cache
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.csproj.CopyComplete
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.exe
+C:\Users\Suyan\OneDrive\Área de Trabalho\ENG Computação\Projeto José Bonifácio\Projeto José Bonifácio\Projeto_Jose_Bonifacio\Proj_JB\Proj_JB\obj\Debug\Proj_JB.pdb
