@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace Proj_JB
 {
@@ -24,6 +25,8 @@ namespace Proj_JB
         int finished_words;
         List<List<Button>> table = new List<List<Button>>();
         List<List<ButtonInformation>> buttonsInfo = new List<List<ButtonInformation>>();
+        private Stopwatch stopwatch;
+    
 
         private class ButtonInformation {
             public int xPosition { get; set; }
@@ -43,11 +46,12 @@ namespace Proj_JB
         }
         #endregion
 
-
         #region Load
         private void Frm_Game1_Load(object sender, EventArgs e)
         {
             Variaveis.Verif2 = false;
+            stopwatch = new Stopwatch();
+            stopwatch.Start();
         }
         public Frm_Game1(IList<string> importFases, int dificult)
         {
@@ -496,31 +500,6 @@ namespace Proj_JB
         }
         #endregion
 
-        #region Botão Mudar Dificuldade
-        private void Btn_Md_Dif_Click(object sender, EventArgs e)
-        {
-            Btn_Tip.Visible = false;
-            Btn_Conf.Visible = true;
-            Btn_Vol.Visible = true;
-            Btn_Md_F.Visible = true;
-            Btn_Md_M.Visible = true;
-            Btn_Md_D.Visible = true;
-
-        }
-        #endregion
-
-        #region Botão Voltar
-        private void Btn_Vol_Click(object sender, EventArgs e)
-        {
-            Btn_Tip.Visible = true;
-            Btn_Conf.Visible = false;
-            Btn_Vol.Visible = false;
-            Btn_Md_F.Visible = false;
-            Btn_Md_M.Visible = false;
-            Btn_Md_D.Visible = false;
-        }
-        #endregion
-
         #region Botão Novo Jogo
         private void Btn_Nv_Jg_Click(object sender, EventArgs e)
         {
@@ -566,6 +545,14 @@ namespace Proj_JB
 
         }
 
+        #endregion
+
+        #region Cronometro
+        private void Tmr_Cont_Tick(object sender, EventArgs e)
+        {
+            Lbl_Tmr.Text = $"{stopwatch.Elapsed:mm\\:ss}";
+            
+        }
         #endregion
 
     }

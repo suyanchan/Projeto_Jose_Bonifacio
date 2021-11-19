@@ -29,6 +29,7 @@ namespace Proj_JB
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Game1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Lbl_Texto = new System.Windows.Forms.Label();
@@ -37,18 +38,12 @@ namespace Proj_JB
             this.Pnl_CP = new System.Windows.Forms.Panel();
             this.Pbx_Art3 = new System.Windows.Forms.PictureBox();
             this.Pbx_Rnk = new System.Windows.Forms.PictureBox();
-            this.Btn_Tip = new System.Windows.Forms.Button();
             this.Btn_Nv_Jg = new System.Windows.Forms.Button();
-            this.Btn_Md_Dif = new System.Windows.Forms.Button();
-            this.Btn_Md_F = new System.Windows.Forms.Button();
-            this.Btn_Md_M = new System.Windows.Forms.Button();
-            this.Btn_Md_D = new System.Windows.Forms.Button();
-            this.Btn_Vol = new System.Windows.Forms.Button();
-            this.Btn_Conf = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Lbl_Tmr = new System.Windows.Forms.Label();
             this.Lbl_Cont = new System.Windows.Forms.Label();
             this.Lbl_Total = new System.Windows.Forms.Label();
+            this.Tmr_Cont = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo1)).BeginInit();
@@ -61,25 +56,26 @@ namespace Proj_JB
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Proj_JB.Properties.Resources.Bg_Txts;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 55);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(768, 91);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 555);
+            this.pictureBox1.Size = new System.Drawing.Size(279, 498);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // Lbl_Texto
             // 
-            this.Lbl_Texto.BackColor = System.Drawing.Color.Bisque;
+            this.Lbl_Texto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(190)))), ((int)(((byte)(130)))));
             this.Lbl_Texto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Texto.Location = new System.Drawing.Point(53, 86);
+            this.Lbl_Texto.Location = new System.Drawing.Point(790, 115);
             this.Lbl_Texto.Name = "Lbl_Texto";
-            this.Lbl_Texto.Size = new System.Drawing.Size(210, 494);
+            this.Lbl_Texto.Size = new System.Drawing.Size(237, 451);
             this.Lbl_Texto.TabIndex = 1;
             // 
             // Pbx_Logo2
             // 
             this.Pbx_Logo2.BackColor = System.Drawing.Color.Transparent;
-            this.Pbx_Logo2.Location = new System.Drawing.Point(171, 637);
+            this.Pbx_Logo2.Location = new System.Drawing.Point(924, 604);
             this.Pbx_Logo2.Name = "Pbx_Logo2";
             this.Pbx_Logo2.Size = new System.Drawing.Size(103, 105);
             this.Pbx_Logo2.TabIndex = 9;
@@ -91,7 +87,7 @@ namespace Proj_JB
             this.Pbx_Logo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Pbx_Logo1.Image = global::Proj_JB.Properties.Resources.logo;
             this.Pbx_Logo1.InitialImage = null;
-            this.Pbx_Logo1.Location = new System.Drawing.Point(44, 637);
+            this.Pbx_Logo1.Location = new System.Drawing.Point(794, 604);
             this.Pbx_Logo1.Name = "Pbx_Logo1";
             this.Pbx_Logo1.Size = new System.Drawing.Size(103, 105);
             this.Pbx_Logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,18 +97,19 @@ namespace Proj_JB
             // Pnl_CP
             // 
             this.Pnl_CP.BackgroundImage = global::Proj_JB.Properties.Resources.Bg_CP;
-            this.Pnl_CP.Location = new System.Drawing.Point(309, 162);
+            this.Pnl_CP.Location = new System.Drawing.Point(22, 17);
             this.Pnl_CP.Name = "Pnl_CP";
-            this.Pnl_CP.Size = new System.Drawing.Size(565, 565);
+            this.Pnl_CP.Size = new System.Drawing.Size(722, 692);
             this.Pnl_CP.TabIndex = 10;
             // 
             // Pbx_Art3
             // 
             this.Pbx_Art3.BackColor = System.Drawing.Color.Transparent;
-            this.Pbx_Art3.Image = global::Proj_JB.Properties.Resources.Pbx_Art3;
-            this.Pbx_Art3.Location = new System.Drawing.Point(1129, 384);
+            this.Pbx_Art3.Image = ((System.Drawing.Image)(resources.GetObject("Pbx_Art3.Image")));
+            this.Pbx_Art3.Location = new System.Drawing.Point(1071, 452);
             this.Pbx_Art3.Name = "Pbx_Art3";
-            this.Pbx_Art3.Size = new System.Drawing.Size(205, 343);
+            this.Pbx_Art3.Size = new System.Drawing.Size(257, 257);
+            this.Pbx_Art3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pbx_Art3.TabIndex = 11;
             this.Pbx_Art3.TabStop = false;
             // 
@@ -120,26 +117,12 @@ namespace Proj_JB
             // 
             this.Pbx_Rnk.BackColor = System.Drawing.Color.Transparent;
             this.Pbx_Rnk.Image = global::Proj_JB.Properties.Resources.Bg_Rank;
-            this.Pbx_Rnk.Location = new System.Drawing.Point(899, 384);
+            this.Pbx_Rnk.Location = new System.Drawing.Point(1071, 158);
             this.Pbx_Rnk.Name = "Pbx_Rnk";
-            this.Pbx_Rnk.Size = new System.Drawing.Size(205, 343);
+            this.Pbx_Rnk.Size = new System.Drawing.Size(257, 267);
+            this.Pbx_Rnk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pbx_Rnk.TabIndex = 12;
             this.Pbx_Rnk.TabStop = false;
-            // 
-            // Btn_Tip
-            // 
-            this.Btn_Tip.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Tip.BackgroundImage = global::Proj_JB.Properties.Resources.Btn_Tip;
-            this.Btn_Tip.FlatAppearance.BorderSize = 0;
-            this.Btn_Tip.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Tip.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Tip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Tip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.Btn_Tip.Location = new System.Drawing.Point(898, 190);
-            this.Btn_Tip.Name = "Btn_Tip";
-            this.Btn_Tip.Size = new System.Drawing.Size(435, 131);
-            this.Btn_Tip.TabIndex = 13;
-            this.Btn_Tip.UseVisualStyleBackColor = false;
             // 
             // Btn_Nv_Jg
             // 
@@ -149,111 +132,21 @@ namespace Proj_JB
             this.Btn_Nv_Jg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Btn_Nv_Jg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Btn_Nv_Jg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Nv_Jg.Location = new System.Drawing.Point(898, 55);
+            this.Btn_Nv_Jg.Location = new System.Drawing.Point(1102, 30);
             this.Btn_Nv_Jg.Name = "Btn_Nv_Jg";
             this.Btn_Nv_Jg.Size = new System.Drawing.Size(205, 83);
             this.Btn_Nv_Jg.TabIndex = 14;
             this.Btn_Nv_Jg.UseVisualStyleBackColor = false;
             this.Btn_Nv_Jg.Click += new System.EventHandler(this.Btn_Nv_Jg_Click);
             // 
-            // Btn_Md_Dif
-            // 
-            this.Btn_Md_Dif.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_Dif.BackgroundImage = global::Proj_JB.Properties.Resources.Btn_Md_Dif;
-            this.Btn_Md_Dif.FlatAppearance.BorderSize = 0;
-            this.Btn_Md_Dif.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_Dif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_Dif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Md_Dif.Location = new System.Drawing.Point(1129, 55);
-            this.Btn_Md_Dif.Name = "Btn_Md_Dif";
-            this.Btn_Md_Dif.Size = new System.Drawing.Size(205, 83);
-            this.Btn_Md_Dif.TabIndex = 15;
-            this.Btn_Md_Dif.UseVisualStyleBackColor = false;
-            this.Btn_Md_Dif.Click += new System.EventHandler(this.Btn_Md_Dif_Click);
-            // 
-            // Btn_Md_F
-            // 
-            this.Btn_Md_F.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_F.FlatAppearance.BorderSize = 0;
-            this.Btn_Md_F.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_F.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_F.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Md_F.Image = global::Proj_JB.Properties.Resources.Btn_Md_F;
-            this.Btn_Md_F.Location = new System.Drawing.Point(898, 195);
-            this.Btn_Md_F.Name = "Btn_Md_F";
-            this.Btn_Md_F.Size = new System.Drawing.Size(138, 47);
-            this.Btn_Md_F.TabIndex = 16;
-            this.Btn_Md_F.UseVisualStyleBackColor = false;
-            this.Btn_Md_F.Visible = false;
-            // 
-            // Btn_Md_M
-            // 
-            this.Btn_Md_M.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_M.FlatAppearance.BorderSize = 0;
-            this.Btn_Md_M.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_M.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_M.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Md_M.Image = global::Proj_JB.Properties.Resources.Btn_Md_M;
-            this.Btn_Md_M.Location = new System.Drawing.Point(1047, 195);
-            this.Btn_Md_M.Name = "Btn_Md_M";
-            this.Btn_Md_M.Size = new System.Drawing.Size(138, 47);
-            this.Btn_Md_M.TabIndex = 17;
-            this.Btn_Md_M.UseVisualStyleBackColor = false;
-            this.Btn_Md_M.Visible = false;
-            // 
-            // Btn_Md_D
-            // 
-            this.Btn_Md_D.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_D.FlatAppearance.BorderSize = 0;
-            this.Btn_Md_D.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_D.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Md_D.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Md_D.Image = global::Proj_JB.Properties.Resources.Btn_Md_D;
-            this.Btn_Md_D.Location = new System.Drawing.Point(1195, 195);
-            this.Btn_Md_D.Name = "Btn_Md_D";
-            this.Btn_Md_D.Size = new System.Drawing.Size(138, 47);
-            this.Btn_Md_D.TabIndex = 18;
-            this.Btn_Md_D.UseVisualStyleBackColor = false;
-            this.Btn_Md_D.Visible = false;
-            // 
-            // Btn_Vol
-            // 
-            this.Btn_Vol.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Vol.FlatAppearance.BorderSize = 0;
-            this.Btn_Vol.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Vol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Vol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Vol.Image = global::Proj_JB.Properties.Resources.Btn_Vol;
-            this.Btn_Vol.Location = new System.Drawing.Point(965, 286);
-            this.Btn_Vol.Name = "Btn_Vol";
-            this.Btn_Vol.Size = new System.Drawing.Size(138, 47);
-            this.Btn_Vol.TabIndex = 19;
-            this.Btn_Vol.UseVisualStyleBackColor = false;
-            this.Btn_Vol.Visible = false;
-            this.Btn_Vol.Click += new System.EventHandler(this.Btn_Vol_Click);
-            // 
-            // Btn_Conf
-            // 
-            this.Btn_Conf.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Conf.FlatAppearance.BorderSize = 0;
-            this.Btn_Conf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Conf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Conf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Conf.Image = global::Proj_JB.Properties.Resources.Btn_Conf;
-            this.Btn_Conf.Location = new System.Drawing.Point(1126, 286);
-            this.Btn_Conf.Name = "Btn_Conf";
-            this.Btn_Conf.Size = new System.Drawing.Size(138, 47);
-            this.Btn_Conf.TabIndex = 20;
-            this.Btn_Conf.UseVisualStyleBackColor = false;
-            this.Btn_Conf.Visible = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Proj_JB.Properties.Resources.deadline;
-            this.pictureBox2.Location = new System.Drawing.Point(666, 73);
+            this.pictureBox2.Location = new System.Drawing.Point(918, 30);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(49, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
             // 
@@ -262,9 +155,9 @@ namespace Proj_JB
             this.Lbl_Tmr.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Tmr.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Tmr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.Lbl_Tmr.Location = new System.Drawing.Point(747, 86);
+            this.Lbl_Tmr.Location = new System.Drawing.Point(956, 38);
             this.Lbl_Tmr.Name = "Lbl_Tmr";
-            this.Lbl_Tmr.Size = new System.Drawing.Size(96, 33);
+            this.Lbl_Tmr.Size = new System.Drawing.Size(96, 34);
             this.Lbl_Tmr.TabIndex = 22;
             this.Lbl_Tmr.Text = "00 : 00";
             // 
@@ -273,22 +166,28 @@ namespace Proj_JB
             this.Lbl_Cont.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Cont.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Cont.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.Lbl_Cont.Location = new System.Drawing.Point(339, 86);
+            this.Lbl_Cont.Location = new System.Drawing.Point(776, 39);
             this.Lbl_Cont.Name = "Lbl_Cont";
-            this.Lbl_Cont.Size = new System.Drawing.Size(47, 43);
+            this.Lbl_Cont.Size = new System.Drawing.Size(45, 33);
             this.Lbl_Cont.TabIndex = 23;
-            this.Lbl_Cont.Text = "00";
+            this.Lbl_Cont.Text = "0";
             // 
             // Lbl_Total
             // 
             this.Lbl_Total.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.Lbl_Total.Location = new System.Drawing.Point(381, 86);
+            this.Lbl_Total.Location = new System.Drawing.Point(809, 39);
             this.Lbl_Total.Name = "Lbl_Total";
-            this.Lbl_Total.Size = new System.Drawing.Size(123, 43);
+            this.Lbl_Total.Size = new System.Drawing.Size(92, 33);
             this.Lbl_Total.TabIndex = 24;
             this.Lbl_Total.Text = "/ 00";
+            // 
+            // Tmr_Cont
+            // 
+            this.Tmr_Cont.Enabled = true;
+            this.Tmr_Cont.Interval = 1000;
+            this.Tmr_Cont.Tick += new System.EventHandler(this.Tmr_Cont_Tick);
             // 
             // Frm_Game1
             // 
@@ -297,26 +196,19 @@ namespace Proj_JB
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Proj_JB.Properties.Resources.Bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1364, 766);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.Lbl_Texto);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Lbl_Total);
             this.Controls.Add(this.Lbl_Cont);
             this.Controls.Add(this.Lbl_Tmr);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.Btn_Conf);
-            this.Controls.Add(this.Btn_Vol);
-            this.Controls.Add(this.Btn_Md_D);
-            this.Controls.Add(this.Btn_Md_M);
-            this.Controls.Add(this.Btn_Md_F);
-            this.Controls.Add(this.Btn_Md_Dif);
             this.Controls.Add(this.Btn_Nv_Jg);
-            this.Controls.Add(this.Btn_Tip);
             this.Controls.Add(this.Pbx_Rnk);
             this.Controls.Add(this.Pbx_Art3);
             this.Controls.Add(this.Pnl_CP);
             this.Controls.Add(this.Pbx_Logo2);
             this.Controls.Add(this.Pbx_Logo1);
-            this.Controls.Add(this.Lbl_Texto);
-            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -345,18 +237,12 @@ namespace Proj_JB
         private System.Windows.Forms.Panel Pnl_CP;
         private System.Windows.Forms.PictureBox Pbx_Art3;
         private System.Windows.Forms.PictureBox Pbx_Rnk;
-        private System.Windows.Forms.Button Btn_Tip;
         private System.Windows.Forms.Button Btn_Nv_Jg;
-        private System.Windows.Forms.Button Btn_Md_Dif;
-        private System.Windows.Forms.Button Btn_Md_F;
-        private System.Windows.Forms.Button Btn_Md_M;
-        private System.Windows.Forms.Button Btn_Md_D;
-        private System.Windows.Forms.Button Btn_Vol;
-        private System.Windows.Forms.Button Btn_Conf;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label Lbl_Tmr;
         private System.Windows.Forms.Label Lbl_Cont;
         private System.Windows.Forms.Label Lbl_Total;
+        private System.Windows.Forms.Timer Tmr_Cont;
     }
 }
 

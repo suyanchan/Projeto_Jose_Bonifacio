@@ -22,7 +22,13 @@ using System.Threading.Tasks;
                 set { verif2 = value; }
             }
 
-        }
+            private static string nome;
+            public static string Nome
+            {
+                get { return nome; }
+                set { nome = value; }
+            }
+    }
 
 
     }

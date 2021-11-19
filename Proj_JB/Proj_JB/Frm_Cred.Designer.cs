@@ -97,7 +97,7 @@ namespace Proj_JB
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proj_JB.Properties.Resources.Bg;
-            this.ClientSize = new System.Drawing.Size(1364, 766);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);

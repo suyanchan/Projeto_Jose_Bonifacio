@@ -101,6 +101,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\RBut.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Variaveis.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -222,6 +225,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Imgs\ErrorSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_Art4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_Art3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

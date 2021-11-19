@@ -75,7 +75,7 @@ namespace Proj_JB
             this.Lbl_Frase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.Lbl_Frase.Location = new System.Drawing.Point(114, 87);
             this.Lbl_Frase.Name = "Lbl_Frase";
-            this.Lbl_Frase.Size = new System.Drawing.Size(1128, 143);
+            this.Lbl_Frase.Size = new System.Drawing.Size(1114, 106);
             this.Lbl_Frase.TabIndex = 2;
             this.Lbl_Frase.Text = resources.GetString("Lbl_Frase.Text");
             this.Lbl_Frase.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -85,7 +85,7 @@ namespace Proj_JB
             this.Pbx_Logo1.BackColor = System.Drawing.Color.Transparent;
             this.Pbx_Logo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Pbx_Logo1.InitialImage = null;
-            this.Pbx_Logo1.Location = new System.Drawing.Point(734, 621);
+            this.Pbx_Logo1.Location = new System.Drawing.Point(734, 589);
             this.Pbx_Logo1.Name = "Pbx_Logo1";
             this.Pbx_Logo1.Size = new System.Drawing.Size(103, 105);
             this.Pbx_Logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -96,7 +96,7 @@ namespace Proj_JB
             // 
             this.Pbx_Logo2.BackColor = System.Drawing.Color.Transparent;
             this.Pbx_Logo2.Image = global::Proj_JB.Properties.Resources.logo;
-            this.Pbx_Logo2.Location = new System.Drawing.Point(494, 621);
+            this.Pbx_Logo2.Location = new System.Drawing.Point(494, 589);
             this.Pbx_Logo2.Name = "Pbx_Logo2";
             this.Pbx_Logo2.Size = new System.Drawing.Size(103, 105);
             this.Pbx_Logo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +115,7 @@ namespace Proj_JB
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Proj_JB.Properties.Resources.Bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1364, 766);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.Pbx_Logo2);
             this.Controls.Add(this.Pbx_Logo1);
             this.Controls.Add(this.Lbl_Frase);
