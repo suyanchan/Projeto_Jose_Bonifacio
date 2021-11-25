@@ -209,7 +209,7 @@ namespace Proj_JB
 
             Generate_Table();
             Render_Phrases();
-            Generate_Random();
+            //Generate_Random();
 
         }
         #endregion
