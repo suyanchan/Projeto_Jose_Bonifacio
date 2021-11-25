@@ -45,10 +45,14 @@ namespace Proj_JB
             this.label3 = new System.Windows.Forms.Label();
             this.Rbt_I = new CustomControls.RJControls.RJRadioButton();
             this.Rbt_JB = new CustomControls.RJControls.RJRadioButton();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Art1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Lbl_Nm_Jog
@@ -56,7 +60,7 @@ namespace Proj_JB
             this.Lbl_Nm_Jog.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Nm_Jog.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Nm_Jog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.Lbl_Nm_Jog.Location = new System.Drawing.Point(79, 122);
+            this.Lbl_Nm_Jog.Location = new System.Drawing.Point(79, 70);
             this.Lbl_Nm_Jog.Name = "Lbl_Nm_Jog";
             this.Lbl_Nm_Jog.Size = new System.Drawing.Size(302, 41);
             this.Lbl_Nm_Jog.TabIndex = 0;
@@ -67,7 +71,7 @@ namespace Proj_JB
             // 
             this.Txt_Nm_Jog.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_Nm_Jog.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Nm_Jog.Location = new System.Drawing.Point(96, 182);
+            this.Txt_Nm_Jog.Location = new System.Drawing.Point(96, 130);
             this.Txt_Nm_Jog.Name = "Txt_Nm_Jog";
             this.Txt_Nm_Jog.Size = new System.Drawing.Size(267, 37);
             this.Txt_Nm_Jog.TabIndex = 1;
@@ -77,7 +81,7 @@ namespace Proj_JB
             this.Lbl_Dif.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Dif.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Dif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.Lbl_Dif.Location = new System.Drawing.Point(131, 276);
+            this.Lbl_Dif.Location = new System.Drawing.Point(131, 194);
             this.Lbl_Dif.Name = "Lbl_Dif";
             this.Lbl_Dif.Size = new System.Drawing.Size(200, 46);
             this.Lbl_Dif.TabIndex = 2;
@@ -94,7 +98,7 @@ namespace Proj_JB
             this.Btn_F.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Btn_F.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_F.Image = global::Proj_JB.Properties.Resources.Btn_F;
-            this.Btn_F.Location = new System.Drawing.Point(134, 351);
+            this.Btn_F.Location = new System.Drawing.Point(134, 260);
             this.Btn_F.Name = "Btn_F";
             this.Btn_F.Size = new System.Drawing.Size(189, 47);
             this.Btn_F.TabIndex = 3;
@@ -111,7 +115,7 @@ namespace Proj_JB
             this.Btn_M.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Btn_M.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_M.Image = global::Proj_JB.Properties.Resources.Btn_M;
-            this.Btn_M.Location = new System.Drawing.Point(134, 422);
+            this.Btn_M.Location = new System.Drawing.Point(134, 331);
             this.Btn_M.Name = "Btn_M";
             this.Btn_M.Size = new System.Drawing.Size(189, 47);
             this.Btn_M.TabIndex = 4;
@@ -128,7 +132,7 @@ namespace Proj_JB
             this.Btn_D.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Btn_D.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_D.Image = global::Proj_JB.Properties.Resources.Btn_D;
-            this.Btn_D.Location = new System.Drawing.Point(134, 493);
+            this.Btn_D.Location = new System.Drawing.Point(134, 402);
             this.Btn_D.Name = "Btn_D";
             this.Btn_D.Size = new System.Drawing.Size(189, 47);
             this.Btn_D.TabIndex = 5;
@@ -137,11 +141,11 @@ namespace Proj_JB
             // 
             // Pbx_Logo1
             // 
-            this.Pbx_Logo1.BackColor = System.Drawing.Color.Transparent;
+            this.Pbx_Logo1.BackColor = System.Drawing.Color.White;
             this.Pbx_Logo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Pbx_Logo1.Image = global::Proj_JB.Properties.Resources.logo;
             this.Pbx_Logo1.InitialImage = null;
-            this.Pbx_Logo1.Location = new System.Drawing.Point(99, 590);
+            this.Pbx_Logo1.Location = new System.Drawing.Point(118, 597);
             this.Pbx_Logo1.Name = "Pbx_Logo1";
             this.Pbx_Logo1.Size = new System.Drawing.Size(103, 105);
             this.Pbx_Logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,9 +154,12 @@ namespace Proj_JB
             // 
             // Pbx_Logo2
             // 
-            this.Pbx_Logo2.Location = new System.Drawing.Point(268, 590);
+            this.Pbx_Logo2.BackColor = System.Drawing.Color.White;
+            this.Pbx_Logo2.Image = global::Proj_JB.Properties.Resources.logostos;
+            this.Pbx_Logo2.Location = new System.Drawing.Point(239, 597);
             this.Pbx_Logo2.Name = "Pbx_Logo2";
             this.Pbx_Logo2.Size = new System.Drawing.Size(103, 105);
+            this.Pbx_Logo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pbx_Logo2.TabIndex = 7;
             this.Pbx_Logo2.TabStop = false;
             // 
@@ -183,7 +190,7 @@ namespace Proj_JB
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.label1.Location = new System.Drawing.Point(495, 115);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(480, 46);
+            this.label1.Size = new System.Drawing.Size(728, 46);
             this.label1.TabIndex = 10;
             this.label1.Text = "Escolha a sua história:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -249,12 +256,41 @@ namespace Proj_JB
             this.Rbt_JB.UnCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(67)))));
             this.Rbt_JB.UseVisualStyleBackColor = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox4.Image = global::Proj_JB.Properties.Resources.logobi;
+            this.pictureBox4.InitialImage = null;
+            this.pictureBox4.Location = new System.Drawing.Point(118, 509);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(103, 68);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 36;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = global::Proj_JB.Properties.Resources.logofund;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(239, 509);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(103, 68);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 35;
+            this.pictureBox3.TabStop = false;
+            // 
             // Frm_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proj_JB.Properties.Resources.Bg;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.Rbt_I);
             this.Controls.Add(this.Rbt_JB);
             this.Controls.Add(this.label3);
@@ -284,6 +320,8 @@ namespace Proj_JB
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Logo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Art1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +344,7 @@ namespace Proj_JB
         private System.Windows.Forms.Label label3;
         private CustomControls.RJControls.RJRadioButton Rbt_JB;
         private CustomControls.RJControls.RJRadioButton Rbt_I;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

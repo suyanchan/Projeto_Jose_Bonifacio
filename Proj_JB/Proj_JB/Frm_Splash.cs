@@ -27,5 +27,11 @@ namespace Proj_JB
             f.Show();
             this.Close();
         }
+
+        private void Frm_Splash_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

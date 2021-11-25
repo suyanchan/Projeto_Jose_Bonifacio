@@ -232,5 +232,14 @@
   <ItemGroup>
     <None Include="bin\Imgs\Pbx_Art3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\logobi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\logofund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\logostos.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
