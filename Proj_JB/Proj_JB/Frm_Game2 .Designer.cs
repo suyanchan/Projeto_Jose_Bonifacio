@@ -1,4 +1,4 @@
-﻿
+
 namespace Proj_JB
 {
     partial class Frm_Game2
