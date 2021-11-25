@@ -363,7 +363,7 @@ namespace Proj_JB
             this.PerformLayout();
 
         }
-
+        #endregion
         private System.Windows.Forms.Button Btn_Nv_Jg;
         private System.Windows.Forms.PictureBox Pbx_Rnk;
         private System.Windows.Forms.PictureBox Pbx_Art4;
