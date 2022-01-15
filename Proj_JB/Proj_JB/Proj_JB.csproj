@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AF5F5BA-5041-4A8A-B14E-E2F3F3377C3D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proj_JB</RootNamespace>
+    <AssemblyName>Proj_JB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_Cred.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Cred.Designer.cs">
+      <DependentUpon>Frm_Cred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Game2 .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Game2 .Designer.cs">
+      <DependentUpon>Frm_Game2 .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Game1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Game1.Designer.cs">
+      <DependentUpon>Frm_Game1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Home.Designer.cs">
+      <DependentUpon>Frm_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Splash.Designer.cs">
+      <DependentUpon>Frm_Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Cred.resx">
+      <DependentUpon>Frm_Cred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Game2 .resx">
+      <DependentUpon>Frm_Game2 .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Game1.resx">
+      <DependentUpon>Frm_Game1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Home.resx">
+      <DependentUpon>Frm_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Splash.resx">
+      <DependentUpon>Frm_Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\RBut.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Variaveis.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_Art1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_Art2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_Art11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_Art22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\rbt_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\rbt_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_F2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_M2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\800px-DpedroI-brasil-full 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Bg_Txts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_Conf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_Md_D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_Md_Dif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_Md_F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_Md_M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_Nv_Jg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_Tip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Btn_Vol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\foto 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Bg_CP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Bg_Rank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\deadline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\JB_Sig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\DP_Sig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\OKSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\ErrorSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_Art4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imgs\Pbx_Art3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
